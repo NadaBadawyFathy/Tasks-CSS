@@ -1,0 +1,226 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* task 1 */
+.div1 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #eee;
+    color: orangered;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid rgb(30, 154, 255);
+    border-right: 5px solid orangered;
+}
+/* task 2 */
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.parent .p1 {
+    background-color: red;
+    color: white;
+    width: calc(95%/3);
+    padding: 10px;
+    text-align: center;
+}
+/* task 3 */
+.parent2 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.one ,.two ,.three ,.four ,.five ,.six {
+    background-color: slategrey;
+    color: white;
+    width: calc(95%/3);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    order: 6;
+    height: 15%;
+    align-self: flex-end;
+}
+
+.two {
+    order: 5;
+}
+
+.five {
+    order: 4;
+    height: 50%;
+}
+
+.four {
+    order: 3;
+    height: 50%;
+}
+
+.three {
+    order: 2;
+    height: 15%;
+}
+/* task 4 */
+.parent3 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.one1 ,.two2 ,.three3 {
+    background-color: teal;
+    color: white;
+    height: calc(80%/3);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.two2 {
+    width: 50%;
+    align-self: flex-end;
+}
+/* task 5 */
+.parent4 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one11 ,.two22 ,.three33 ,.four44 {
+    color: white;
+    height: 50%;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.one11 {
+    background-color: orange;
+    order: 2;
+}
+
+.two22 {
+    background-color: yellowgreen;
+    order: 3;
+    align-self: flex-end;
+}
+
+.four44 {
+    background-color: slateblue;
+    align-self: flex-end;
+}
+
+.three33 {
+    background-color: sienna;
+    order: 4;
+}
+/* task 6 */
+.page {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+:root {
+    --mainColor: gainsboro;
+    --mainPadding: 20px;
+}
+
+.header ,.main-area ,.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    background-color: var(--mainColor);
+    width: 8%;
+    padding: var(--mainPadding);
+    text-align: center;
+}
+
+.links {
+    background-color: var(--mainColor);
+    width: 91%;
+    padding: var(--mainPadding);   
+    list-style: none;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.links li {
+    margin-left: 15px;
+}
+
+.content {
+    background-color: var(--mainColor);
+    width: 75%;
+    height: 550px;
+    padding: var(--mainPadding);
+}
+
+.sidebar {
+    background-color: var(--mainColor);
+    width: 24%;
+    padding: var(--mainPadding);
+}
+
+.copyright {
+    background-color: var(--mainColor);
+    width: 50%;
+    padding: var(--mainPadding);
+}
+
+.design {
+    background-color: var(--mainColor);
+    width: 50%;
+    padding: var(--mainPadding);
+    display: flex;
+    justify-content: flex-end;
+}

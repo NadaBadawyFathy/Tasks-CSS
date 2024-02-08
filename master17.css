@@ -1,0 +1,263 @@
+/* task 1 */
+.div1 {
+    width: 50px;
+    height: 50px;
+    margin: 40px auto;
+    border-radius: 50%;
+    border: 5px solid #E91E63;
+    border-left-color: transparent;
+    position: relative;
+    animation-name: spn1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.div1::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid #26C6DA;
+    border-right-color: transparent;
+    position: absolute;
+    top: -15px; 
+    left: -15px;
+}
+.div1::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: -25px; 
+    left: -25px;
+}
+@keyframes spn1 {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+.div1:hover {
+    animation-play-state: paused;
+}
+/* task 2 */
+.div2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.div2 div{
+    animation-name: spn2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: ease;
+}
+.div2 .one {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #26C6DA;
+    border-bottom-color: transparent;
+}
+.two {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-bottom-color: transparent;
+    position: absolute;
+    animation-delay: 0.2s;
+}
+.three {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    position: absolute;
+    animation-delay: 0.4s;
+}
+@keyframes spn2 {
+    to{
+        transform: rotate(1turn);
+    }
+}
+.div2:hover div {
+    animation-play-state: running;
+}
+/* task 3 */
+span {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span::after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    border: 5px solid black;
+    border-left-color: transparent;
+    animation-name: spn3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+@keyframes spn3 {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+/* task 4 */
+.parent {
+    width: 500px;
+    height: 300px;
+    margin: 40px auto;
+    background-color: gainsboro;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.parent .cl1 {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(5,50px);
+}
+/* first child */
+.cl1 div {
+    background-color: black;
+}
+.one1 ,.three3 ,.five5 {
+    grid-column: 1/span 2;
+}
+.two2 ,.four4 {
+    width: 50px;
+    height: 100px;
+}
+/* second child */
+.parent .cl2 {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(5,50px);
+}
+.cl2 div {
+    background-color: black;
+}
+.on1{
+    grid-row: 1/span 4;
+    width: 50px;
+}
+.tw2 {
+    grid-row: 5/span 1;
+    width: 200px;
+}
+/* rg */
+.parent .rg1 {
+    background-color: orange;
+    padding: 20px;
+    position: absolute;
+    top: 35px;
+    left: 210px;
+    animation-name: spn4;
+    animation-duration: 4s;
+}
+@keyframes spn4 {
+    0%{
+        top: 35px;
+        left: 210px;
+    }
+    20%{
+        top: 35px;
+        left: 65px;
+    }
+    30%{
+        top: 135px;
+        left: 65px;
+    }
+    40%{
+        top: 135px;
+        left: 210px;
+    }
+    50%{
+        top: 135px;
+        left: 65px;
+    }
+    60%{
+        top: 235px;
+        left: 65px;
+    }
+    70%{
+        top: 235px;
+        left: 210px;
+    }
+    80%{
+        top: 235px;
+        left: 65px;
+    }
+    90%{
+        top: 35px;
+        left: 65px;
+    }
+    100%{
+        top: 35px;
+        left: 210px;
+    }
+}
+.parent .rg2 {
+    background-color: orange;
+    padding: 20px;
+    position: absolute;
+    top: 235px;
+    left: 430px;
+    animation-delay: 4s;
+    animation-name: spn5;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+@keyframes spn5 {
+    0%{
+        top: 235px;
+        left: 430px;
+        opacity: 1;
+    }
+    50%{
+        top: 235px;
+        left: 285px;
+        opacity: 1;
+    }
+    80%{
+        top: 35px;
+        left: 285px;
+        opacity: 1;
+    }
+    100%{
+        top: 35px;
+        left: 285px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,63 @@
+/* task 1 */
+.s1 {
+background-color: rgb(207, 206, 206);
+margin: 10px;
+padding: 35px 65px;
+border: 5px red solid;
+outline: 5px black solid;
+display: inline-block;
+}
+
+.s2 {
+background-color: rgb(207, 206, 206);    
+margin: 10px;
+padding: 35px 65px;
+border-width: 5px;
+border-color: blue green;
+border-style: solid;
+outline: 5px black solid;
+display: inline-block;
+}
+
+.s3 {
+background-color: rgb(207, 206, 206);
+margin: 10px;
+padding: 35px 65px;
+border-width: 5px;
+border-color: red green blue yellow;
+border-style: dashed;
+outline: 5px black solid;
+display: inline-block;
+}
+
+/* task 2 */
+.task2 {
+background-color: rgb(226, 226, 226);
+width: 400px;
+margin: 10px 0;
+padding: 5px 10px;
+}
+
+.e1 {   
+padding: 15px;
+border-left: 5px rgb(238, 36, 103) solid;
+}
+
+.hidden {
+background-color: rgb(226, 226, 226);
+width: 400px;
+margin: 10px 0;
+padding: 5px 10px; 
+visibility: hidden;   
+}
+
+.e2 {
+padding: 15px;
+border-left: 5px rgb(160, 48, 7) solid;
+visibility: hidden; 
+}
+
+.e3 {
+padding: 15px;
+border-left: 5px rgb(6, 133, 155) solid;
+}

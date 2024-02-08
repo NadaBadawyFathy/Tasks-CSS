@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* task 1 */
+.div1 {
+    width: 300px;
+    height: 60px;
+    background-color: ghostwhite;
+    margin: 15px auto 15px auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.div1:empty {
+    background-color: red;
+}
+/* task 2 */
+.div2 {
+    width: fit-content;
+    background-color: gainsboro;
+    padding: 30px;
+    margin: 15px auto 15px auto;
+    position: relative;
+}
+
+.div2::first-letter {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 15px;   
+    margin-left: -50px;
+    margin-right: 20px;
+    left: -50px;
+}
+/* task 3 */
+/* p {
+    background-color: ghostwhite;
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    border-left: 5px solid rgb(238, 36, 103) ;
+    position: relative;
+}
+
+p::before {
+    content: attr(data-person);
+    background-color: gainsboro;
+    padding: 10px;
+    position: absolute;
+    left: -100px;
+    bottom: 10px;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent rgb(238, 36, 103) transparent transparent;
+    left: -24px;
+} */ 
+/* task 4 */
+.parent {
+    counter-increment: members-counter;
+}
+p {
+    background-color: gainsboro;
+    width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+    counter-increment: members-counter;
+    /* border-right: 5px solid orangered; */
+}
+
+p::after {
+    content: "";
+    background-color: orangered;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+}
+
+p::before {
+    content: counter(members-counter);
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+
+

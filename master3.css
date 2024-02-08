@@ -1,0 +1,24 @@
+/* task 1 */
+div div span.title {
+    background-color: red;
+}
+
+div span.title {
+    background-color: blue;
+}
+
+p,
+div.title {
+background-color: green;
+}
+/* task 2 */
+div {
+    color: white;
+    background-color: brown;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 20px;
+    width: fit-content;
+    overflow: hidden; 
+}

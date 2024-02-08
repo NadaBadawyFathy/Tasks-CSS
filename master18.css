@@ -1,0 +1,39 @@
+/* task 1 */
+/* div[class*="main red"] {
+    color: red;
+} */
+
+/* task 2 */
+/* .child:nth-child(2) {
+    color: red;
+} */
+
+/* task 3 */
+/* .baby:only-child {
+    color: red;
+} */
+
+/* task 4 */
+/* div[title]:not(.no-need):not(.parent div) {
+    color: red;
+} */
+
+/* task 5 */
+/* div div[title="Elzero"]:last-child:not(.no-need):not(.no-need div) {
+    color: red;
+} */
+
+/* task 6 */
+/* div div:nth-last-of-type(2):not(.no-need div) {
+    color: red;
+} */
+
+/* task 7 */
+/* div h3+div:nth-last-of-type(2):not(.no-need div):not(.no-need-2 div) {
+    color: red;
+} */
+
+/* task 8 */
+/* :not(:first-child):not(:last-child):not(h3) {
+    color: red;
+} */

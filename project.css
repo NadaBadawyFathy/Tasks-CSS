@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid;
+    border-color: orangered transparent transparent orangered;
+    overflow: hidden;
+}
+
+ h1 {
+    color: orangered;
+    width: fit-content;
+    border-bottom: 2px solid yellow;
+    margin: auto;
+    padding-top: 80px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pp2 {
+    color: white;
+    width: fit-content;
+    font-weight: bold;
+    margin: 30px auto;
+    font-size: 40px;
+}
+
+.p1 , .p2, .p3 {
+    color: white;
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.p1 {
+    margin-right: 40px;
+}
+
+.im1 ,.im2 ,.im3{
+    border: 4px solid;
+    border-color: yellow yellow yellow yellow;
+    width: fit-content;
+    float: left;
+    margin: 30px;
+    text-align: center;
+}
+
+.im1 {
+    margin-left: 180px;
+}
+
+.pp3 {
+    background-color: white;
+    margin-top: -29px;
+    margin-bottom: -20px;
+}
+
+.pp3 .c1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.pp3 .c3 {
+    color: orange;
+}
+

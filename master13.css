@@ -1,0 +1,103 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* task 1 */
+.div1 {
+    width: 600px;
+    background-color: #eee;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: relative;
+    border-left: 5px solid orangered;
+    border-right: 5px solid #673AB7;
+}
+
+.div1::first-letter {
+    color: orangered;
+}
+
+.div1::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    background-image: linear-gradient(
+    to right ,
+    orangered ,
+    orangered 20% ,
+    #2196f3 20% ,
+    #2196f3 40% ,
+    #4caf50 40% ,
+    #4caf50 60% ,
+    #E91E63 60% ,
+    #E91E63 80% ,
+    #673AB7 80% );
+}
+
+.div1::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    background-image: linear-gradient(
+    to right ,
+    orangered ,
+    orangered 20% ,
+    #2196f3 20% ,
+    #2196f3 40% ,
+    #4caf50 40% ,
+    #4caf50 60% ,
+    #E91E63 60% ,
+    #E91E63 80% ,
+    #673AB7 80% );
+}
+/* task 2 */
+input {
+    width: 600px;
+    background-color: #eee;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image-source: linear-gradient(
+        to right ,
+        red ,
+        red 50% ,
+        teal 50% );
+    border-width: 3px;
+    border-image-slice: 1; */
+    caret-color: orangered;
+    border: 0;
+    font-weight: bold;
+}
+
+.div2 {
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+ .div2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    background-image: linear-gradient(
+    to right ,
+    orangered ,
+    orangered 50% ,
+    teal 50% );
+} 

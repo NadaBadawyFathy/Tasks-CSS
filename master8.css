@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* task 1 */
+.green ,.red ,.blue ,.black {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.green {
+    background-color: seagreen;
+    z-index: 3;
+    left: 30px;
+    top: 30px;
+}
+
+.red {
+    background-color: red;
+    z-index: 4;
+    left: 40px;
+    top: 40px;
+}
+
+.blue {
+    background-color: rgb(30, 154, 255);
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+}
+
+.black {
+    background-color: black;
+    z-index: 1;
+    left: 20px;
+    top: 30px;
+}
+
+/* task 2 */
+.divv {
+    background-color: gainsboro;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 30px;
+    margin-top: 15px ;
+    text-align: center;
+    border-left: 2px solid rgb(30, 154, 255);
+    border-right:2px solid rgb(30, 154, 255);
+    border-top: 2px solid red;
+    border-bottom:2px solid red;
+}
+
+.top-right ,.top-left ,.bottom-left ,.bottom-right {
+    background-color: rgb(30, 154, 255);
+    padding: 5px 10px;
+    position: absolute;
+    color: white;
+}
+
+.top-left {
+    border-right: 2px solid red;
+    left: -15px;
+    top: -15px;
+}
+
+.top-right {
+    border-left: 2px solid red;
+    right: -15px;
+    top: -15px;
+}
+
+.bottom-left {
+    border-right: 2px solid red;
+    left: -15px;
+    bottom: -15px;
+}
+
+.bottom-right {
+    border-left: 2px solid red;
+    right: -15px;
+    bottom: -15px;  
+}
+/* task 3 */
+.ul {
+    width: 400px;
+    margin: auto;
+}
+
+.html ,.css ,.javascript {
+    background-color: gainsboro;
+    padding: 5px 10px;
+    margin: 15px;
+    list-style: none;
+}
+
+.style3 {
+    padding: 0;
+}
+
+.style1 ,.style2 {
+    padding-left: 35px;
+}
+
+.style1 li {
+    background-color: white;
+    padding: 5px;
+    margin: 10px 0;
+    list-style-position: outside
+}
+
+.style2 li {
+    background-color: white;
+    padding: 5px;
+    margin: 10px 0;
+    list-style-type: upper-roman;
+    list-style-position: outside
+}
+
+.style3 li {
+    background-color: white;
+    padding: 5px;
+    margin: 10px 0;
+    list-style-position: inside
+}
+/* task 4 */
+table caption {
+    margin: 20px;
+    font-weight: bold;
+}
+
+table {
+    width: 700px;
+    background-color: ghostwhite;
+    border-spacing: 0px;
+    margin:auto;
+    border-bottom: 3px solid teal;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+table thead td {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.button1 {
+    background-color: rgb(30, 154, 255);;
+    color: white;
+    padding: 5px 10px;
+    border-color: ghostwhite;
+}
+
+.button2 {
+    background-color:   rgb(238, 36, 103) ;
+    color: white;
+    padding: 5px 10px;
+    border-color: ghostwhite;
+}

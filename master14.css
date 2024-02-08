@@ -1,0 +1,223 @@
+/* task 1 */
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 50px auto;
+    gap: 20px 20px;
+  }
+
+  .grid div {
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-increment: counter;
+  }
+
+  .grid div::after {
+    content:  "Element " counter(counter);
+  }
+  /* task 2 */
+  .layout {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "head head head head" "sec sec sec as" "foot foot foot foot";
+  }
+
+  header {
+    grid-area: head;
+    background-color: #2196f3;
+    padding: 15px;
+  }
+
+  section {
+    grid-area: sec;
+    background-color: orangered;
+    padding: 15px;
+  }
+
+  aside {
+    grid-area: as;
+    background-color: gray;
+    padding: 15px;
+  }
+
+  footer {
+    grid-area: foot;
+    background-color: teal;
+    padding: 15px;
+  }
+
+  header::after {
+    content: "Header";
+  }
+
+  section::after {
+    content: "Section";
+  }
+
+  aside::after {
+    content: "Aside";
+  }
+
+  footer::after {
+    content: "Footer";
+  }
+  /* task 3 */
+  .grid1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 20px 20px;
+  }
+
+  .grid1 div {
+    background-color: #000000bd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* task 4 */
+  .grid2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 20px 20px;
+  }
+
+  .grid2 div {
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eight {
+    grid-area: 1/1/1/4;
+  }
+
+  .two {
+    grid-area: 2/1/2/3;
+  }
+
+  .five {
+    grid-area: 3/2/6/4;
+  }
+
+  .one {
+    grid-area: 6/1/6/4;
+  }
+/* task 5 */
+.grid3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    align-content: space-between;
+  }
+
+  .grid3 div {
+    background-color: #E91E63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* task 6 */
+  .grid4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 1000px;
+    height: 1300px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px 20px;
+  }
+
+  .grid4 div {
+    border-bottom: 3px solid orangered;
+    padding: 20px;
+  }
+
+  .one1 {
+    grid-column: 1/span 2;
+    background-color: white;
+  }
+
+  .two2 {
+    background-color: white;
+  }
+
+  .three3 {
+    grid-area: 1/4/4/4;
+    background-color: black;
+    color: white;
+  }
+
+  .five5 {
+    grid-area: 2/2/2/4;
+    background-color: black;
+    color: white;
+  }
+
+  .six6 {
+    grid-area: 3/2/3/4;
+    background-color: white;
+  }
+
+  .four4 {
+    grid-area: 2/1/4/2;
+    background-color: white;
+  }
+
+  .seven7 ,.nine9 ,.ten10 {
+    background-color: white;
+  }
+
+  .eight8 {
+    background-color: black;
+    color: white;
+  }
+
+

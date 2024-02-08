@@ -1,0 +1,132 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* task 1 */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    position: relative;
+    counter-increment: members-counter;
+    box-shadow: 4px 5px 0 0 rgb(30, 154, 255),-4px -4px 0 1px rgb(238, 36, 103);
+}
+
+div::before {
+    content: "Element";
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+div::after {
+    content: counter(members-counter);
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    top: -10px;
+    right: 40px;
+    text-align: center;
+} */
+/* task 2 */
+/* div {
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 15px 50px;
+    box-shadow: 0 0 10px 0 black inset;
+} */
+/* task 3 */
+.parent {
+    width: 550px;
+    height: 250px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 100px;
+    text-align: center;
+}
+
+.ch1 ,.ch2 {
+    width: 160px;
+    height: 220px;
+    background-color: rgb(232, 229, 229);
+    float: left;
+    position: relative;
+}
+
+.ch1 {
+    margin-right: 30px;
+}
+
+.p1 {
+    width: 140px;
+    height: 140px;
+    background-color: gainsboro;
+    border-radius: 50%; 
+    position: absolute; 
+    top: 60px;
+    left: 10px;
+}
+
+.p2 ,.c2 {
+    width: 140px;
+    background-color: rgb(30, 154, 255);
+    position: absolute;
+    padding: 5px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.p2::before {
+    content: "Free";
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    color: black;
+    font-size: 30px;
+}
+
+.c2::before {
+    content: "$30";
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: black;
+    font-size: 30px;
+}
+
+.ch1::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: rgb(30, 154, 255);
+    position: absolute;
+    right: -16px;
+}
+
+.ch2::before {
+    content: "or";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(30, 154, 255);
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 45%;
+    left: -24px;
+}
+

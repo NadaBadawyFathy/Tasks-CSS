@@ -1,0 +1,148 @@
+/* task 1 */
+.h1 {
+    width: 150px;
+    height: 100px;
+    margin: 40px auto;
+    background-color: orangered;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.h1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    position: absolute;
+    transform: skew(-15deg,-10deg);
+    z-index: -1;
+}
+
+.h1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    position: absolute;
+    transform: skew(15deg,10deg);
+    z-index: -2;
+}
+/* task 2 */
+.h2 {
+    width: 150px;
+    height: 80px;
+    margin: 40px auto;
+    background-color: teal;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.h2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+    position: absolute;
+    transform-origin: right bottom;
+    transform: skew(20deg,0);
+    z-index: -1;
+}
+
+.h2::after {
+    content: "";
+    width: 15%;
+    height: 100%;
+    background-color: teal;
+    position: absolute;
+    left: -20%;
+    transform-origin: left bottom;
+    transform: skew(20deg,0);
+}
+/* task 4 */
+.div1 {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #607D8B;
+    border-bottom: 5px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.div1::after {
+    content: "Elzero";
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px 10px;
+}
+
+.div1::before {
+    content: "";
+    width: 68%;
+    height: 68%;
+    background-color: black;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    position: absolute;
+    top: -35%;
+    transform: rotate(45deg);
+}
+/* task 5 */
+.div2 {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 1s ;
+    backface-visibility: hidden;
+}
+
+.div2::after {
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E91E63;
+    color: white;
+    position: absolute;
+}
+
+.div2::before {
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+    color: white;
+    position: absolute;
+    /* transform: rotateY(180deg); */
+    transform: rotateX(180deg);
+}
+
+.div2:hover {
+    /* transform: rotateY(-180deg); */
+    transform: rotateX(-180deg);
+}
